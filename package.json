@@ -13,5 +13,6 @@
     "url": "https://github.com/mangano-ito/lottie-keypath-finder/issues"
   },
   "homepage": "https://github.com/mangano-ito/lottie-keypath-finder#readme",
-  "description": "A tool to dump KeyPath tree from Lottie JSON"
+  "description": "A tool to dump KeyPath tree from Lottie JSON",
+  "type": "module"
 }
