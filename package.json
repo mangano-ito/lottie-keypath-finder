@@ -1,0 +1,17 @@
+{
+  "name": "lottie-keypath-finder",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mangano-ito/lottie-keypath-finder.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mangano-ito/lottie-keypath-finder/issues"
+  },
+  "homepage": "https://github.com/mangano-ito/lottie-keypath-finder#readme",
+  "description": "A tool to dump KeyPath tree from Lottie JSON"
+}
