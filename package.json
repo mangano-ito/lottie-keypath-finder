@@ -14,5 +14,9 @@
   },
   "homepage": "https://github.com/mangano-ito/lottie-keypath-finder#readme",
   "description": "A tool to dump KeyPath tree from Lottie JSON",
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "^5.8.3"
+  },
   "type": "module"
 }
