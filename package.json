@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run start:cli",
+    "start:cli": "node --no-warnings=ExperimentalWarning src/main.cli.ts",
+    "start:web": "npm run dev",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
