@@ -51,20 +51,37 @@ async function generateResult() {
 }
 
 /**
+ * handle the lookup button click event
+ */
+async function onLookUpBtnClick() {
+    try {
+        generateResult();
+    } catch (error) {
+        if (error instanceof Error) {
+            await renderError(error);
+        } else {
+            console.error(error);
+        }
+    }
+}
+
+/**
  * setup the event listeners
  */
 function setup() {
+    const input = document.getElementById('input') as HTMLInputElement;
     const lookupButton = document.getElementById('lookup-btn') as HTMLButtonElement;
     lookupButton.addEventListener('click', () => {
-        try {
-            generateResult();
-        } catch (error) {
-            if (error instanceof Error) {
-                renderError(error);
-            } else {
-                console.error(error);
-            }
+        input.click();
+    });
+    input.addEventListener('change', async () => {
+        const selectedFile = input.files?.[0];
+        if (!selectedFile) {
+            // not expected, but just in case.
+            window.alert("No file selected.");
+            return;
         }
+        onLookUpBtnClick();
     });
 }
 
