@@ -55,7 +55,7 @@ async function generateResult() {
  */
 async function onLookUpBtnClick() {
     try {
-        generateResult();
+        await generateResult();
     } catch (error) {
         if (error instanceof Error) {
             await renderError(error);
